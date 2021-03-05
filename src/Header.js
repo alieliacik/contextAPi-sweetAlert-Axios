@@ -5,7 +5,10 @@ import { LoadingContext } from './LoadingContext'
 const Header = () => {
   const [isLoading, setIsLoading] = useContext(LoadingContext)
   return (
-    <div className='App-header'>
+    <div
+      onClick={() => setIsLoading((prevState) => !prevState)}
+      className='App-header'
+    >
       Header
       {isLoading ? ' isLoading' : ' isNotLoading'}
       <p
