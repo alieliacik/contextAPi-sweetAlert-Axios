@@ -8,6 +8,7 @@ import Topics from './Topics'
 import Grid from './GridNaming'
 import { createGlobalStyle } from 'styled-components'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import GridExplicit from './GridExplicit'
 
 const GlobalStyle = createGlobalStyle`
   & .swal-overlay {
@@ -31,6 +32,9 @@ function App() {
               <Link to='/'>Home</Link>
             </li>
             <li>
+              <Link to='/gridExplicit'>GridExplicit</Link>
+            </li>
+            <li>
               <Link to='/axios'>Axios</Link>
             </li>
             <li>
@@ -49,6 +53,7 @@ function App() {
           <Route path='/footer' component={Footer} />
           <Route path='/topics' component={Topics} />
           <Route path='/axios' component={Axios} />
+          <Route path='/gridExplicit' component={GridExplicit} />
           <Route path='/' component={Grid} />
         </Switch>
       </LoadingProvider>

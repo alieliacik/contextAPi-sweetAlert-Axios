@@ -21,16 +21,15 @@ const StyledGrid = styled.div`
   .header {
     grid-column: col-start 1 / grid-end;
   }
-
   .sidebar {
-    grid-column: 4 / -1;
+    grid-column: col-end 3 / grid-end;
     grid-row: box-start / main-end;
   }
   .main {
-    grid-column: 1 / 4;
+    grid-column: col-start 1 / col-end 3;
   }
   .footer {
-    grid-column: 1 / -1;
+    grid-column: col-start 1 / grid-end;
   }
 `
 
