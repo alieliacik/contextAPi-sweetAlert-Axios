@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Grid = () => {
-  return <div>grid</div>
+  return <div>griad</div>
 }
 
 export default Grid
