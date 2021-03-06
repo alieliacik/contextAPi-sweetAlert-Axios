@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Axios from './Axios'
 import Topics from './Topics'
+import Grid from './Grid'
 import { createGlobalStyle } from 'styled-components'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
@@ -30,6 +31,9 @@ function App() {
               <Link to='/'>Home</Link>
             </li>
             <li>
+              <Link to='/axios'>Axios</Link>
+            </li>
+            <li>
               <Link to='/header'>Header</Link>
             </li>
             <li>
@@ -44,7 +48,8 @@ function App() {
           <Route path='/header' component={Header} />
           <Route path='/footer' component={Footer} />
           <Route path='/topics' component={Topics} />
-          <Route path='/' component={Axios} />
+          <Route path='/axios' component={Axios} />
+          <Route path='/' component={Grid} />
         </Switch>
       </LoadingProvider>
     </Router>
