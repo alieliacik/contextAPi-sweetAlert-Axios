@@ -5,7 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Axios from './Axios'
 import Topics from './Topics'
-import Grid from './Grid'
+import Grid from './GridNaming'
 import { createGlobalStyle } from 'styled-components'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
